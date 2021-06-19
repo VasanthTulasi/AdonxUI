@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  background: #0b1118;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  min-height: 12vh;
+  /* opacity: 0.8; */
+}
+
+
+/* Three divisions in Navbar */
+
+/* Logo */
+.logo {
+  /* border: 1px solid chartreuse; */
+  flex: 3;
+}
+
+/* Menu buttons */
+.navlinks {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  /* width: 30%; */
+  align-items: center;
+
+  /* background: blue; */
+  flex: 7;
+}
+
+/* Sign in and Register */
+.log-in-and-sign-up {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid white; */
+  flex: 2;
+}
+
+/* SVG Logo */
+.svglogo {
+  width: 10vw;
+  margin-left: 20px;
+  /* align-self: center; */
+}
+
+/* Each menu item */
+.navlink {
+  /* border: 1px solid chartreuse; */
+  /* color: #aabacc; */
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  padding: 15px;
+}
+
+/* On Hover of Each Nav Link */
+
+.navlink:hover {
+  color: #1ffbb3;
+  cursor: pointer;
+
+
+  /* border-bottom: 1px solid #0094ff; */
+  /* border-bottom: 1px solid #1FFBB3; */
+}
+
+/* Log in button */
+.log-in {
+  /* border: 1px solid cornflowerblue; */
+  color: white;
+  background: #0b1118;
+
+  border-radius: 3px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 0.9vw;
+  letter-spacing: 0.1vw;
+  padding: 0.8vw;
+  border: 1px solid white;
+}
+
+/* Sign-in on hover */
+
+.log-in:hover {
+  cursor: pointer;
+  background: white;
+  color: #0b1118;
+}
+
+/* Register button */
+.register {
+  /* border: 1px solid cornflowerblue; */
+  color: #0b1118;
+  background: #1ffbb3;
+  border-radius: 3px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 0.9vw;
+  letter-spacing: 0.1vw;
+  padding: 0.8vw;
+}
+
+/* Register onhover */
+.register:hover {
+  cursor: pointer;
+  background: white;
+  color: #0b1118;
+}
+
+/* Burger Icon for Responsive Navbar */
+
+.burger div {
+  width: 20px;
+  height: 3px;
+  margin: 5px;
+  /* margin-right: 15px; */
+  background: #1ffbb3;
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .navlinks {
+    position: absolute;
+    top: 11vh;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    right: 0px;
+    background-color: #0b1118;
+    transform: translateX(-100%);
+  }
+
+  .logo {
+    justify-self: flex-start;
+    /* border:1px solid red; */
+    flex: 2;
+  }
+
+  .log-in-and-sign-up {
+    flex: 3;
+    margin-right: 5px;
+    justify-content: flex-end;
+    /* border:1px solid red; */
+  }
+
+  .log-in {
+    margin-right: 5px;
+    font-size: 3.5vw;
+    letter-spacing: 0.5vw;
+    padding: 2vw;
+  }
+
+  .register {
+    margin: 0 5px;
+    font-size: 3.5vw;
+    letter-spacing: 0.5vw;
+    padding: 2vw;
+  }
+
+  .burger {
+    display: block;
+    margin-left: 5px;
+    /* border:1px solid red; */
+  }
+
+  .svglogo {
+    width: 30vw;
+    margin-left: 5px;
+    margin-top: 0.55vh;
+    /* border:1px solid red; */
+    /* align-self: center; */
+  }
+
+}
+
+.nav-click{
+  transform: translateX(0%);
+  transition: 0.2s ease-in;
+}
+
+
+
+
+
+
+
+
+

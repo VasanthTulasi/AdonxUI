@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;1,200&display=swap');
+
+/* font-family: 'Cormorant', serif; */
+/* font-family: 'Source Sans Pro', sans-serif; */
+/* font-family: 'Titillium Web', sans-serif; */
+
+/* Hero Section  */
+
+.herocontent {
+    /* background-color: #0b1118;  */
+    background-image: url("../Images/layered-waves-haikei6.svg");      
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+
+  
+  .herotext{
+    /* border: 1px solid blue; */
+    color: white; 
+    margin:5vw;
+    /* margin-top: 10vw; */
+    flex:1;
+    
+  }
+
+  .heroillustration{
+    /* border: 1px solid green; */
+    color: white;
+    margin:5vw;
+    /* margin-top: 10vw; */
+    flex:1;
+  }
+
+  .headline-text{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 4.5vw;
+    font-weight: 600;
+  }
+
+  .caption-text{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.5vw;
+    font-weight: 100;
+    margin-top: 2vw;
+  }
+
+
+  .illustrationimage{
+      width: 35vw;
+      border-radius: 1vw;
+  }
+
+
+  @media screen and (max-width: 900px) {
+
+    .herocontent {
+        flex-direction: column;
+        /* border: 1px solid red; */
+      }
+
+      .herotext{
+        /* border: 1px solid blue; */
+        color: white; 
+        margin:5vh;
+        margin-top: 20vh;
+        flex:1;
+        
+      }
+    
+      .heroillustration{
+        /* border: 1px solid green; */
+        margin:5vw;
+        flex:1;
+      }
+    
+      .headline-text{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 9vw;
+        font-weight: 600;
+      }
+    
+      .caption-text{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 8vw;
+        font-weight: 100;
+
+      }
+
+      .illustrationimage{
+        width: 80vw;
+        border-radius: 2vw;
+    }
+
+  }
+
+
+
+  /* Ipad dimensions
+  @media screen and (min-width: 767px) and (max-width: 900px) {
+
+    .herocontent {
+        flex-direction: column;
+      }
+
+      .herotext{
+        color: white; 
+        margin:5vh;
+        margin-top: 15vh;
+        flex:1;
+        
+      }
+    
+      .heroillustration{
+        margin:5vw;
+        flex:1;
+      }
+    
+      .headline-text{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 10vw;
+        font-weight: 600;
+      }
+    
+      .caption-text{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 8vw;
+        font-weight: 100;
+
+      }
+
+      .illustrationimage{
+        width: 60vw;
+        border-radius: 2vw;
+    }
+
+
+  } */
+
+
+  /* Animation */
+
+
+  /* .caption-text{
+    opacity: 1;
+    transition: all 2s ease-in;
+    transform: translateY(-30px);
+  } */
+
+
+
+  
+
+
+
+

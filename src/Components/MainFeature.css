@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+:root {
+  --primary-color: #0b1118;
+  --secondary-color: #1ffbb3;
+}
+
+.mainfeatures {
+  /* border: 1px solid red; */
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10vh;
+  /* background-color: #84f7d1; */
+  background-image: url("../Images/stacked-peaks-haikei8.svg");
+  background-size: cover;
+}
+
+
+
+.features {
+  /* border: 0.3vw solid var(--primary-color); */
+  /* border-radius: 1vw; */
+  flex: 1;
+  margin: 5vw;
+}
+
+.feature_illustation {
+  flex: 1;
+  margin: 5vw;
+  /* border: 1px solid green; */
+  width: 35vw;
+  height: auto;
+}
+
+.feature_heading {
+  /* border: 1px solid green; */
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2.5vw;
+  font-weight: 100;
+  margin: 3vw;
+  margin-bottom: 0.5vw;
+}
+
+.feature_caption {
+  /* border: 1px solid yellow; */
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.2vw;
+  color: var(--primary-color);
+  border-radius: 0.5vw;
+  margin: 3vw;
+  margin-top: 5vh;
+}
+
+.feature_button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5vw;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 0.2vw;
+  margin: 3vw;
+  margin-top: 1vw;
+  border: 0px;
+  padding: 0.7vw;
+}
+
+.feature_button:hover {
+  cursor: pointer;
+  /* background-color: white; */
+  color: #84f7d1;
+}
+
+@media screen and (max-width: 900px) {
+  .mainfeatures {
+    flex-direction: column;
+    padding-top: 2vh;
+  }
+
+  .features {
+    border: 1vw solid var(--primary-color);
+    border-radius: 2vw;
+  }
+
+  .feature_heading {
+    font-size: 9vw;
+  }
+
+  .feature_caption {
+    font-size: 7vw;
+    margin-top: 1vh;
+  }
+
+  .feature_button {
+    font-size: 6vw;
+    padding: 3vw;
+    margin-top: 1vh;
+  }
+
+  .feature_illustation {
+    /* border: 1px solid green; */
+    width: 65vw;
+    height: auto;
+  }
+}
+
+.flexreverse{
+  flex-flow: row-reverse;
+}
