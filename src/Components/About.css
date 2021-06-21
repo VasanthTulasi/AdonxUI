@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+.about {
+  /* border: solid 1px red; */
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0b1118;
+  /* background-color: #84f7d1; */
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 0 10vw;
+}
+
+.about_text {
+  color: white;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2vw;
+  font-weight: 100;
+  margin: 3vw;
+  margin-bottom: 0.5vw;
+}
+
+.community_icons {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.other_links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  /* border: 1px solid red; */
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: white;
+  border-radius: 0.5vw;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #84f7d1;
+}
+
+.icon {
+  /* border: 1px solid red; */
+  width: 2.5vw;
+  height: auto;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: #84f7d1;
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    /* padding-top:46vh; */
+    padding-top: 4vh;
+  }
+
+  .about_text {
+    font-size: 7vw;
+    /* border: 1px solid red; */
+    margin: 0;
+    flex: 1;
+  }
+
+  .community_icons {
+    flex-direction: column;
+    /* border: 1px solid red; */
+    flex: 1.5;
+    margin-top: 1vh;
+    /* justify-content: center; */
+  }
+
+  .icon {
+    width: 10vw;
+    height: auto;
+    margin-top: 4vh;
+  }
+
+  .other_links {
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    font-size: 6vw;
+    margin-top: 4vh;
+    /* padding-bottom: 4vh; */
+    font-weight: 400;
+  }
+}

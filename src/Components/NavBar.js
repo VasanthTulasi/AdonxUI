@@ -5,12 +5,8 @@ import './NavBar.css';
 
 export default function NavBar() {
 
-
-  
-
-
     return (
-      <div className="navbar">
+      <div id="home" className="navbar">
         {/* <!-- Hamburger Menu --> */}
         <div className="burger">
           <div className="line1"></div>
@@ -25,14 +21,16 @@ export default function NavBar() {
 
         {/* <!-- Menu Items --> */}
         <ul className="navlinks">
-          <li className="navlink">FEATURES</li>
-          <li className="navlink">TOKEN</li>
-          <li className="navlink">SALES</li>
+          <li><a class="a_navlink navlink" href="#features">FEATURES</a></li> 
+          <li><a class="a_navlink navlink" href="#about">ABOUT</a></li>
+          {/* <li className="navlink">FEATURES</li>
+          <li className="navlink">ABOUT</li> */}
+          {/* <li className="navlink">SALES</li>
           <li className="navlink">ROADMAP</li>
           <li className="navlink">WHITEPAPER</li>
           <li className="navlink">TEAM</li>
           <li className="navlink">SOCIAL</li>
-          <li className="navlink">FAQS</li>
+          <li className="navlink">FAQS</li> */}
         </ul>
 
         {/* <!-- Login and Sign Up Buttons --> */}
@@ -40,6 +38,8 @@ export default function NavBar() {
           <div className="log-in">Log in</div>
           <div className="register">Sign Up</div>
         </div>
+
+  
       </div>
 
     );

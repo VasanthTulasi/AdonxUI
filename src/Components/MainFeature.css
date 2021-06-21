@@ -3,7 +3,7 @@
 
 :root {
   --primary-color: #0b1118;
-  --secondary-color: #1ffbb3;
+  --secondary-color: #84f7d1;
 }
 
 .mainfeatures {
@@ -12,11 +12,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 10vh;
-  /* background-color: #84f7d1; */
-  background-image: url("../Images/stacked-peaks-haikei8.svg");
   background-size: cover;
 }
+
+.flexreverse{
+  flex-flow: row-reverse;
+}
+
 
 
 
@@ -25,7 +27,17 @@
   /* border-radius: 1vw; */
   flex: 1;
   margin: 5vw;
+  /* animation: anim 2s linear; */
+  /* transition-property: margin;
+  transition-duration: 1s linear; */
+  /* transition: 0.2s all ease; */
+  /* border: 1px solid green; */
 }
+
+/* .features:hover{
+transform: scale(1.02);
+} */
+
 
 .feature_illustation {
   flex: 1;
@@ -33,6 +45,7 @@
   /* border: 1px solid green; */
   width: 35vw;
   height: auto;
+  animation: anim 4s linear;
 }
 
 .feature_heading {
@@ -54,6 +67,10 @@
   margin-top: 5vh;
 }
 
+.changeTextColor{
+  color:white;  
+}
+
 .feature_button {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5vw;
@@ -64,6 +81,13 @@
   margin-top: 1vw;
   border: 0px;
   padding: 0.7vw;
+}
+
+.changeButtonColor{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  color: black;
+  
 }
 
 .feature_button:hover {
@@ -77,10 +101,20 @@
     flex-direction: column;
     padding-top: 2vh;
   }
-
+  
   .features {
     border: 1vw solid var(--primary-color);
     border-radius: 2vw;
+  }
+
+  .changeBorderColor{
+    border: 0.7vw solid white;
+  }
+
+
+  .flexreverse{
+    flex-flow: column;
+    flex-direction: column;
   }
 
   .feature_heading {
@@ -103,8 +137,7 @@
     width: 65vw;
     height: auto;
   }
+
 }
 
-.flexreverse{
-  flex-flow: row-reverse;
-}
+

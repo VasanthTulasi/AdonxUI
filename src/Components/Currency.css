@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+.currency_details {
+  background-color: #0b1118;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 4vw 0 4vw;
+  /* border-radius: 1vw; */
+  padding: 1vw 0 1vw 0;
+  /* border:1px solid red; */
+  flex-wrap: wrap;
+}
+
+.bottom_border{
+    border-bottom: 1px solid #84f7d1;
+}
+
+.name_and_icon {
+  width: 2vw;
+  /* border:1px solid red; */
+}
+
+.name_header {
+  font-size: 1.5vw;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+.current_price {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+.current_price_header {
+    font-size: 1.5vw;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+.percentage_change {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+.percentage_change_header{
+    font-size: 1.5vw;
+    color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  
+}
+
+.buy_button {
+  background-color: #84f7d1;
+  color: #0b1118;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.5vw;
+  border-radius: 0.2vw;
+  border: 0px;
+  padding: 0.3vw 1.5vw;
+ 
+}
+
+.buy_button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+
+.trade_header{
+    background-color: #0b1118;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 1.5vw;
+    border-radius: 0.2vw;
+    border: 0px;
+    padding: 0.3vw 1.5vw;
+
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .currency_details {
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* margin: 0 4vw 0 4vw; */
+        /* padding: 1vw 0 1vw 0; */
+        flex-direction: column;
+        border:1px solid #84f7d1 ;
+        border-radius: 3vw;
+        margin: 6vh 8vw;
+        padding: 0;
+      }
+
+      .currency_header{
+          display: none;
+      }
+
+      .name_and_icon {
+        width: 100%;
+        text-align: center;
+        padding:3vh;
+        /* border:1px solid red; */
+        border-bottom:1px solid #84f7d1 ;
+
+      }
+
+      .current_price {
+        width: 100%;
+        text-align: center;
+        padding: 3vh;
+        color: white;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-size: 5vw;
+        /* border:1px solid blue; */
+        border-bottom:1px solid #84f7d1 ;
+
+      }
+
+      .percentage_change {
+        width: 100%;
+        text-align: center;
+        padding: 3vh;
+        color: white;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-size: 5vw;
+        /* border:1px solid green; */
+        border-bottom:1px solid #84f7d1 ;
+
+      }
+
+      .percentage_change::after {
+        content: " (24hr %)";
+      }
+
+
+      .buy_button {
+        
+        /* text-align: center; */
+        /* padding: 2vh; */
+        background-color: #84f7d1;
+        color: #0b1118;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+        font-size: 5vw;
+        border-radius: 1.2vw;
+        border: 0px;
+        padding: 1.5vh 4vh;
+        margin: 3vh;
+        /* border:1px solid #84f7d1 ; */
+
+      }
+
+}

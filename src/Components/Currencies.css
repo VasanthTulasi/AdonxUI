@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+.start_trading_text{
+text-align: center;
+color: #0b1118;
+font-family: "Source Sans Pro", sans-serif;
+font-weight: 600;
+font-size: 2.5vw;
+margin-bottom: 10vh;
+/* border:1px solid red; */
+
+}
+
+.currencies_and_heading{
+border: 1px solid #84f7d1;
+padding-top: 5vh;
+background-color: #84f7d1;
+background-image: url("../SVGs/layered-waves-haikei7.svg");
+background-size: cover;
+/* border:1px solid red; */
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .start_trading_text{
+        font-size:6.5vw;
+        padding:0 14vw;
+        /* border:1px solid red; */
+        }
+
+}
+
