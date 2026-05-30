@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# AdonxUI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based marketing landing page for **Adonx**, a cryptocurrency exchange platform. It showcases platform features, displays live crypto prices, and invites users to join the community.
+
+## Features
+
+- **Hero section** — headline and illustration introducing the Adonx exchange
+- **Live crypto prices** — real-time prices and 24-hour change for Bitcoin, Ethereum, Litecoin, and Bitcoin Cash via the public CoinGecko API
+- **Platform features showcase** — six alternating sections covering Highly Scalable Matching Engine, Multi-Layered Security, Account Alias, Vanity Address, Atom Swap, and Developer API
+- **Community / About section** — social icons and footer links
+- **Responsive navigation** — logo, anchor links to Features and About sections, Log in and Sign Up buttons
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| UI framework | React 17 |
+| Build tooling | Create React App (react-scripts 4) |
+| Styling | Custom CSS (no framework) |
+| Fonts | Google Fonts (Titillium Web, Source Sans Pro, Raleway, Cormorant) |
+| External data | CoinGecko public REST API (no API key required) |
+| Assets | Custom SVGs for icons, logos, and backgrounds |
+
+## Prerequisites
+
+- **Node.js** ≥ 14 (LTS recommended)
+- **npm** ≥ 6 (bundled with Node.js)
+
+## Getting Started
+
+### Installation
+
+```bash
+git clone <repo-url>
+cd AdonxUI
+npm install
+```
+
+### Environment Variables
+
+This project uses no environment variables. The CoinGecko API endpoint used is public and requires no authentication.
+
+### Running the App
+
+```bash
+# Development server (hot reload at http://localhost:3000)
+npm start
+
+# Production build (output to /build)
+npm run build
+```
+
+## Project Structure
+
+```
+AdonxUI/
+├── public/               # Static assets served as-is (favicon, manifest)
+└── src/
+    ├── App.js            # Root component — wires together all sections
+    ├── Components/       # UI components (NavBar, HeroSection, Currencies, etc.)
+    ├── SVGs/             # SVG assets: logo, icons, currency logos, backgrounds
+    └── Images/           # Raster/SVG image assets
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+| Script | Description |
+|---|---|
+| `npm start` | Start development server on port 3000 |
+| `npm run build` | Create optimised production build in `/build` |
+| `npm test` | Run tests in interactive watch mode |
+| `npm run eject` | Eject from Create React App (irreversible) |
 
-### `npm start`
+## Contributing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository and create a feature branch.
+2. Make changes, keeping components in `src/Components/` and assets in `src/SVGs/`.
+3. Run `npm start` to verify the UI locally.
+4. Open a pull request against `main`.
